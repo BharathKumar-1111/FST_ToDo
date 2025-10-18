@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import TaskContext from "../context/TaskContext";
 import CompletedTask from "./CompletedTask";
 function Completed() {
