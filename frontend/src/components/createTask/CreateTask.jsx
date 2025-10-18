@@ -6,7 +6,7 @@ import TokenContext from '../../context/TokenContext';
 import "./createTask.css"
 function CreateTask() {
     const { dispatch } = useContext(TaskContext)
-    const {userToken} = useContext(TokenContext)
+    //const {userToken} = useContext(TokenContext)
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
     // const [toast, setToast] = useState(); // Unused state
