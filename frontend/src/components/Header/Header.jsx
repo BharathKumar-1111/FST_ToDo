@@ -5,7 +5,7 @@ import TokenContext from '../../context/TokenContext.js';
 import "./header.css"
 function Header() {
     const token = localStorage.getItem("authToken");
-    const { user } = useContext(TokenContext);
+    const { user } = useContext(TokenContext); // user is used
     console.log("user", user);
     const logout = () => {
         localStorage.removeItem("authToken");

@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useContext } from 'react';
 import TaskContext from '../../context/TaskContext';
 import TokenContext from '../../context/TokenContext';
-import axios from "../../Axios/axios.js"
+// import axios from "../../Axios/axios.js" // Unused import
 import "./createTask.css"
 function CreateTask() {
     const { dispatch } = useContext(TaskContext)
     const {userToken} = useContext(TokenContext)
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
-    // const [toast, setToast] = useState();
+    // const [toast, setToast] = useState(); // Unused state
     const handleAdd = async (e) => {
         e.preventDefault();
         try {
@@ -19,7 +19,7 @@ function CreateTask() {
             //   }
             // })
             //setToast(res.data)
-            // showToast();
+            // showToast(); // Unused axios logic
           } catch (error) {
             console.log(error);
           }
@@ -40,7 +40,7 @@ function CreateTask() {
     // const hideToast = () => {
     //     const toast = document.getElementById('toast');
     //     toast.style.display = "none"
-    // }
+    // } // Unused toast logic
     return (
         <div className="addContainer md:w-1/3 md:mx-auto mx-3 mt-3 flex justify-center">
             <div className='w-11/12'>

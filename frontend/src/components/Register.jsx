@@ -5,7 +5,7 @@ import axios from "../Axios/axios.js"
 import TokenContext from '../context/TokenContext.js';
 function Register() {
     const [formData, setFormData] = useState({})
-    const {userToken, tokenDispatch, userDispatch } = useContext(TokenContext);
+    const {userToken, tokenDispatch, userDispatch } = useContext(TokenContext); // userToken, tokenDispatch, userDispatch are all used
     const [error, setError] = useState();
     const handleChange = (e) => {
         const { name, value } = e.target;
